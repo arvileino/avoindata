@@ -28,7 +28,6 @@
 	
 	let xhr = new XMLHttpRequest();
 	xhr.open('GET', 'https://dev.turku.fi/datasets/aluejaot/pienalueet-4326.geojson');
-	xhr.setRequestHeader('Content-Type', 'application/json');
 	xhr.responseType = 'json';
 	xhr.onload = function() {
 		L.geoJSON(xhr.response).addTo(map);
